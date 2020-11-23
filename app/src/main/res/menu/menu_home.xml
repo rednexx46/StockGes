@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuConta"
+          android:title="@string/account"
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/ic_conta_24dp"/>
+
+    <item android:id="@+id/menuAdicionarFrase"
+          android:title="@string/add_phrase"
+          app:showAsAction="never"
+          android:icon="@drawable/ic_adicionar_frase_24dp"/>
+
+    <item android:id="@+id/menuRemoverFrase"
+          android:title="@string/remove_phrase"
+          app:showAsAction="never"
+          android:icon="@drawable/ic_remover_frase_24dp"/>
+
+    <item android:id="@+id/menuSair"
+          android:title="@string/settings_logout"
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/ic_logout_utilizador_24dp"/>
+
+</menu>

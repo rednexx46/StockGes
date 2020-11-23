@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragments.InserirFragment">
+
+    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_abrir_fotografias_24dp"
+            android:id="@+id/imageButtonFotografiasInserir"
+            android:contentDescription="@string/open_gallery_description" android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@+id/imageProdutoInserir"
+            app:layout_constraintEnd_toEndOf="@+id/imageProdutoInserir"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonCamaraInserir"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_abrir_camara_24dp"
+            android:id="@+id/imageButtonCamaraInserir"
+            android:contentDescription="@string/open_camera_description" android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@+id/imageProdutoInserir"
+            app:layout_constraintStart_toStartOf="@+id/imageProdutoInserir" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonFotografiasInserir"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageProdutoInserir"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/padrao_produto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextInserirCodigo"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+            android:id="@+id/imageReaderInserir"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/qr_code_description"
+            android:src="@drawable/ic_qr_code_24"
+            app:layout_constraintTop_toTopOf="@+id/editTextInserirCodigo"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextInserirCodigo"
+            android:background="@drawable/bg_button" app:layout_constraintEnd_toEndOf="@+id/editTextInserirQuantidade"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextInserirCodigo" android:layout_weight="1"
+            android:hint="@string/id"
+            android:autofillHints=""
+            app:layout_constraintTop_toBottomOf="@+id/imageProdutoInserir"
+            app:layout_constraintBottom_toTopOf="@+id/editTextInserirQuantidade"
+            android:imeOptions="actionNext" android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_codigo_24dp"
+            app:layout_constraintStart_toStartOf="@+id/editTextInserirQuantidade"
+            app:layout_constraintEnd_toStartOf="@+id/imageReaderInserir"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextInserirQuantidade" android:layout_weight="1"
+            android:hint="@string/quantity"
+            android:autofillHints=""
+            app:layout_constraintTop_toBottomOf="@+id/editTextInserirCodigo"
+            app:layout_constraintBottom_toTopOf="@+id/editTextInserirDescricao"
+            app:layout_constraintStart_toStartOf="parent"
+            android:imeOptions="actionNext" android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_quantidade_24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"/>
+    <EditText
+            android:id="@+id/editTextInserirDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/editTextInserirQuantidade"
+            app:layout_constraintBottom_toTopOf="@+id/fab_Inserir"
+            app:layout_constraintEnd_toEndOf="@+id/editTextInserirQuantidade"
+            app:layout_constraintStart_toStartOf="@+id/editTextInserirQuantidade"
+            android:imeOptions="actionNext" android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_descricao_24dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_Inserir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:srcCompat="@drawable/ic_inserir_fab_24dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" android:layout_marginEnd="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

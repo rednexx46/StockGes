@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".activity.LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageLogoLogin"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/thinking_ahead_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextEmail" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextEmail" android:hint="@string/email"
+            android:inputType="textWebEmailAddress|textEmailAddress"
+            android:autofillHints=""
+            app:layout_constraintTop_toBottomOf="@+id/imageLogoLogin"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            android:imeOptions="actionNext"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" android:drawableStart="@drawable/ic_email_24dp"
+            android:drawablePadding="5dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword|textWebPassword"
+            android:ems="10"
+            android:id="@+id/editTextPassword"
+            android:hint="@string/password"
+            android:autofillHints=""
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:imeOptions="actionNext" app:layout_constraintEnd_toStartOf="@+id/imageButtonPasswordLogin"
+            android:drawableStart="@drawable/ic_password_24dp" android:drawablePadding="5dp"/>
+    <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintBottom_toTopOf="@+id/textFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginStart="32dp"/>
+    <TextView
+            android:text="@string/made_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textFooter"
+            android:textAlignment="center" android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_mostrar_password_24dp"
+            android:id="@+id/imageButtonPasswordLogin"
+            android:background="@drawable/bg_button"
+            app:layout_constraintTop_toTopOf="@+id/editTextPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPassword" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:contentDescription="@string/image_show_hide_password"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

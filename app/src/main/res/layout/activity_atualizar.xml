@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".activity.AtualizarProdutoActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/productImageAtualizar"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/padrao_produto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextAtualizarCodigo"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_abrir_camara_24dp"
+            android:id="@+id/imageButtonCamaraAtualizar"
+            android:contentDescription="@string/open_camera_description" android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@+id/productImageAtualizar"
+            app:layout_constraintStart_toStartOf="@+id/productImageAtualizar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonFotografiasAtualizar"/>
+    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_abrir_fotografias_24dp"
+            android:id="@+id/imageButtonFotografiasAtualizar"
+            android:contentDescription="@string/open_gallery_description" android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@+id/productImageAtualizar"
+            app:layout_constraintEnd_toEndOf="@+id/productImageAtualizar"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonCamaraAtualizar"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageButton
+            android:id="@+id/imageReaderAtualizar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/qr_code_description"
+            android:src="@drawable/ic_qr_code_24"
+            app:layout_constraintTop_toTopOf="@+id/editTextAtualizarCodigo"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextAtualizarCodigo"
+            android:background="@drawable/bg_button"
+            app:layout_constraintEnd_toEndOf="@+id/editTextAtualizarQuantidade"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextAtualizarQuantidade" android:layout_weight="1"
+            android:hint="@string/quantity"
+            android:autofillHints=""
+            app:layout_constraintTop_toBottomOf="@+id/editTextAtualizarCodigo"
+            app:layout_constraintBottom_toTopOf="@+id/editTextAtualizarDescricao"
+            android:imeOptions="actionNext" android:drawableStart="@drawable/ic_quantidade_24dp"
+            android:drawablePadding="5dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:id="@+id/editTextAtualizarDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAtualizarQuantidade"
+            app:layout_constraintBottom_toTopOf="@+id/fab_Atualizar"
+            app:layout_constraintEnd_toEndOf="@+id/editTextAtualizarQuantidade"
+            app:layout_constraintStart_toStartOf="@+id/editTextAtualizarQuantidade"
+            android:imeOptions="actionNext" android:drawableStart="@drawable/ic_descricao_24dp"
+            android:drawablePadding="5dp"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextAtualizarCodigo" android:layout_weight="1"
+            android:hint="@string/id"
+            android:autofillHints=""
+            app:layout_constraintTop_toBottomOf="@+id/productImageAtualizar"
+            app:layout_constraintBottom_toTopOf="@+id/editTextAtualizarQuantidade"
+            app:layout_constraintStart_toStartOf="@+id/editTextAtualizarQuantidade"
+            android:imeOptions="actionNext" android:drawableStart="@drawable/ic_codigo_24dp"
+            android:drawablePadding="5dp" app:layout_constraintEnd_toStartOf="@+id/imageReaderAtualizar"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_Atualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:srcCompat="@drawable/ic_inserir_fab_24dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" android:layout_marginEnd="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

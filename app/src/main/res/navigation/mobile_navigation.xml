@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+            android:id="@+id/nav_inicio"
+            android:name="com.thinkingahead.stockges.fragments.InicioFragment"
+            android:label="@string/home"
+            tools:layout="@layout/fragment_inicio"/>
+
+    <fragment
+        android:id="@+id/nav_inserir"
+        android:name="com.thinkingahead.stockges.fragments.InserirFragment"
+        android:label="@string/menu_inserir"
+        tools:layout="@layout/fragment_inserir"/>
+
+    <fragment
+        android:id="@+id/nav_remover"
+        android:name="com.thinkingahead.stockges.fragments.RemoverFragment"
+        android:label="@string/menu_remover"
+        tools:layout="@layout/fragment_remover" />
+
+    <fragment
+        android:id="@+id/nav_listar"
+        android:name="com.thinkingahead.stockges.fragments.ListarFragment"
+        android:label="@string/menu_listar"
+        tools:layout="@layout/fragment_listar" />
+
+    <fragment
+        android:id="@+id/nav_atualizar"
+        android:name="com.thinkingahead.stockges.fragments.AtualizarFragment"
+        android:label="@string/menu_atualizar"
+        tools:layout="@layout/fragment_atualizar" />
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="com.thinkingahead.stockges.fragments.SobreFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_sobre" />
+
+</navigation>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.thinkingahead.stockges">
+
+    <uses-feature
+            android:name="android.hardware.camera2"
+            android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+            android:allowBackup="false"
+            android:fullBackupContent="false"
+            android:icon="@mipmap/thinking_ahead_logo"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:replace="android:allowBackup">
+        <activity
+                android:name=".activity.RemoverContaActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.DefinicoesContaActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.DefinicoesContaActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.HomeActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.CriarContaActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.LoginActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.EsquecerPasswordActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.LoginActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.SobreActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.LoginActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.RemoverFraseActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.HomeActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.AdicionarFraseActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.HomeActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.LoadingActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.QrCodeActivity"/>
+        <activity
+                android:name=".activity.AtualizarProdutoActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.thinkingahead.stockges.activity.HomeActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.HomeActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".activity.LoginActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".activity.CapturaActivity"
+                android:screenOrientation="fullSensor"
+                android:stateNotNeeded="true"
+                android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+
+</manifest>

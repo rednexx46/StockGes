@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+        <TextView
+                android:text="@string/phrase_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textAutor" android:layout_weight="1"
+                android:gravity="center" android:textSize="18sp" android:textStyle="bold"
+                android:textAlignment="center" android:padding="8dp"/>
+    </LinearLayout>
+    <TextView
+            android:text="@string/phrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textFraseRemover" android:layout_weight="1"
+            android:layout_gravity="center" android:padding="8dp" android:textStyle="bold"
+            android:textAllCaps="false" android:textSize="14sp" android:gravity="center"/>
+</LinearLayout>

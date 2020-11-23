@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "427701839025",
+    "firebase_url": "https://stockges-15fa7.firebaseio.com",
+    "project_id": "stockges-15fa7",
+    "storage_bucket": "stockges-15fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427701839025:android:c533aa0fb69b7cfb9eae90",
+        "android_client_info": {
+          "package_name": "com.thinkingahead.stockges"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427701839025-cf328rt4126940gp0gchrfu7jlfb80le.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thinkingahead.stockges",
+            "certificate_hash": "cefd7cac1626cca206c14ad79bb6948d91480ac4"
+          }
+        },
+        {
+          "client_id": "427701839025-pfpb9uoi6f5e71e7jur4ve0u08605co4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2DAnErCpTsnjWq2wX2YRMQLvTg4P-ZeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427701839025-pfpb9uoi6f5e71e7jur4ve0u08605co4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

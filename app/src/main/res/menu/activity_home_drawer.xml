@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+
+    <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_inicio_24dp"
+            android:title="@string/home"/>
+
+    <group
+            android:id="@+id/menu_produto"
+            android:checkableBehavior="none">
+        <item
+                android:id="@+id/nav_inserir"
+                android:icon="@drawable/ic_inserir_24dp"
+                android:title="@string/menu_inserir"/>
+        <item
+                android:id="@+id/nav_remover"
+                android:icon="@drawable/ic_remover_24dp"
+                android:title="@string/menu_remover"/>
+
+        <item
+                android:id="@+id/nav_atualizar"
+                android:icon="@drawable/ic_atualizar_fab_24dp"
+                android:title="@string/menu_atualizar"/>
+
+        <item
+                android:id="@+id/nav_listar"
+                android:icon="@drawable/ic_listar_24dp"
+                android:title="@string/menu_listar"/>
+    </group>
+
+    <group
+            android:id="@+id/menu_outros"
+            android:checkableBehavior="none">
+        <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_sobre_24dp"
+                android:title="@string/about"/>
+
+    </group>
+
+
+</menu>

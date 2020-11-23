@@ -1,0 +1,65 @@
+<resources>
+
+
+    <!-- Configurações Básicas !-->
+    <string name="app_name">StockGes</string>
+    <string name="email">Introduza o Email!</string>
+    <string name="password">Introduza a Password!</string>
+    <string name="login_button">Login</string>
+    <string name="nav_header_title">Thinking Ahead</string>
+    <string name="nav_header_subtitle">thinkingaheadapps@gmail.com</string>
+    <string name="app_desc">Just a simple "Stock Management" App</string>
+
+
+    <!-- Menu -->
+    <string name="menu_inserir">Inserir Produto</string>
+    <string name="menu_remover">Remover Produto</string>
+    <string name="menu_listar">Listar Produto</string>
+    <string name="menu_atualizar">Atualizar Produto</string>
+
+
+    <!-- Interfaces -->
+    <string name="logo">Thinking Ahead</string>
+    <string name="profile_image">Foto de Perfil</string>
+    <string name="home">Início</string>
+    <string name="about">Sobre</string>
+    <string name="loading">Carregando...</string>
+
+    <!--  MenuMain -->
+    <string name="create_account">Criar Conta</string>
+    <string name="forgot_password">Esqueceu-se da Password?</string>
+    <string name="confirm_password">Confirme a Password!</string>
+
+    <!-- MenuHome -->
+    <string name="account">Conta</string>
+    <string name="add_phrase">Adicionar Frase</string>
+    <string name="remove_phrase">Remover Frase</string>
+    <string name="settings_logout">Sair</string>
+
+    <!-- Produtos -->
+    <string name="id">Código</string>
+    <string name="description">Descrição</string>
+    <string name="quantity">Quantidade</string>
+
+    <!-- Frase -->
+    <string name="phrase">Frase</string>
+    <string name="phrase_author">Autor</string>
+    <string name="confirm">Confirmar</string>
+    <string name="no_phrase_found">Nenhuma Frase Encontrada!</string>
+
+    <!-- Descrições -->
+    <string name="open_gallery_description">Abrir Fotografias</string>
+    <string name="open_camera_description">Abrir Câmara</string>
+    <string name="confirm_name">Confirmar Nome de Perfil</string>
+    <string name="qr_code_description">Imagem de abertura do Leitor de Código de Barras</string>
+
+    <!-- Outros !-->
+    <string name="made_by">Criado com ❤ By TauTau Agency</string>
+    <string name="button_attach_image">Anexar Imagem</string>
+    <string name="no_product_found">Nenhum Produto Encontrado!</string>
+    <string name="account_settings_name">Nome Ex: Joana</string>
+    <string name="image_show_hide_password">Mostrar/Esconder Password</string>
+    <string name="hint_name">Introduza o Nome de Utilizador!</string>
+    <string name="remove_account">Remover Conta</string>
+
+</resources>
